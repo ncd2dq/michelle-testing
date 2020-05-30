@@ -1,0 +1,41 @@
+
+
+body {
+    margin: 0;
+}
+
+.top-grid {
+    /* Location of the image */
+    background-image: url(../images/36ed060f-dfd7-4cb0-991d-204bf7c1c87c-1202x1600-800x1065.jpg);
+
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* Set height and width to size of viewport */
+    width: 100vw;
+    height: 100vh;
+
+    /* This is what makes the background image rescale based
+        on the container's size */
+    background-size: cover;
+
+    /* Set a background color that will be displayed
+        while the background image is loading */
+    background-color: #464646;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.col-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.col-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
