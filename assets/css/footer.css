@@ -1,0 +1,15 @@
+
+.footer-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    padding: 15px;
+    background-color: #2e2e2e;
+}
+
+.social-icons {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    text-align: center;
+}
