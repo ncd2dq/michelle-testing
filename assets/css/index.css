@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+body {
+    margin: 0;
+}
+
+/* Full viewport grid (Above fold)*/
+.top-grid-container {
+    /* Location of the image */
+    background-image: url(../images/index-top-2000x1333.jpg);
+
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* Set height to size of viewport */
+    height: 100vh;
+
+    /* This is what makes the background image rescale based
+        on the container's size */
+    background-size: cover;
+
+    /* Set a background color that will be displayed
+        while the background image is loading */
+    background-color: #464646;
+
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 10% 1fr 1fr 1fr;
+}
+
+/* Transparent overlay of background image */
+.image-overlay {
+    z-index: 0;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    background:rgba(35,35,35);
+    opacity: 0.4;
+}
+
+/* Michelle Garcia */
+.title-text {
+    z-index: 1;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: min(8vw, 90px);
+    letter-spacing: 0.5vw;
+    text-align: center;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+.col-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
