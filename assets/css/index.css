@@ -3,6 +3,12 @@ body {
     margin: 0;
 }
 
+/*
+
+Above the fold
+
+*/
+
 /* Full viewport grid (Above fold)*/
 .top-grid-container {
     /* Location of the image */
@@ -27,7 +33,7 @@ body {
 
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 10% 1fr 1fr 1fr;
+    grid-template-rows: 45px 10% 1fr 1fr 1fr;
 }
 
 /* Transparent overlay of background image */
@@ -39,11 +45,25 @@ body {
     opacity: 0.4;
 }
 
+/* Hamburger button */
+.menu-button-grid-container {
+    z-index: 1;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.menu-button-container {
+    margin: 0 auto;
+    width: 35px;
+    height: 27px;
+    padding-top: 10px;
+}
+
 /* Michelle Garcia */
 .title-text {
     z-index: 1;
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
 
     font-family: 'Nanum Gothic', sans-serif;
     font-size: min(8vw, 90px);
@@ -52,7 +72,9 @@ body {
     white-space: nowrap;
     color: #FFFFFF;
 }
-.col-2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
+
+/*
+
+Below the fold
+
+*/
