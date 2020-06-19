@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i);
+
+
+/*
+
+Hamburger button
+
+*/
+
+/*
+To house this button tightly:
+
+    width: 35px;
+    height: 27px;
+
+*/
+
+.menu-button {
+  cursor: pointer;
+  width: 35px;
+  height: 27px;
+  margin: auto auto;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/*
+
+Collapseable side bar
+
+*/
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: width 0.3s ease-in-out; /*changes how long nav takes to expand*/
+  padding-top: 60px;
+}
+
+.sidenav a {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  padding: 8px 32px 8px 8px;
+  top: 16%;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s ease-in-out;
+  text-align: right;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
