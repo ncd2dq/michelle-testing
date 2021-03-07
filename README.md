@@ -9,10 +9,13 @@ michelle-testing (staging) (stagging-branch)
 https://css-tricks.com/snippets/css/complete-guide-grid/
 
 For development
-1. Commit to `staging-branch`
-2. `git push staging staging-branch`
-3. Raise a PR on `michelle-testing`: staging-branch -> master (gets it to show live on staging)
-4. See changes https://ncd2dq.github.io/michelle-testing/
+0. Publish mobirise to the 2021 working folder
+1. Delete michelle-garcia-website/ EVERYTHING except .git, volante, README.md, robots.txt
+2. Copy / paste over from the 2021 working folder
+3. Commit to `staging-branch`
+4. `git push staging staging-branch`
+5. Raise a PR on `michelle-testing`: staging-branch -> master (gets it to show live on staging)
+6. See changes https://ncd2dq.github.io/michelle-testing/
 
 # DO NOT TOUCH ANYTHING IN VOLANTE/
 
