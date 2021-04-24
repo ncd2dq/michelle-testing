@@ -10,7 +10,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 For development
 0. Publish mobirise to the 2021 working folder
-1. Delete michelle-garcia-website/ EVERYTHING except .git, volante, README.md, robots.txt
+1. Delete michelle-garcia-website/ EVERYTHING except .git, volante/, README.md, robots.txt
 2. Copy / paste over from the 2021 working folder
 3. Commit to `staging-branch`
 4. `git push staging staging-branch`
