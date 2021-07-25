@@ -24,3 +24,7 @@ For production deployment
 2. `git merge origin/staging-branch`
 3. `git push origin develop`
 4. Raise a PR on `volante` : develop -> master
+
+# Pics
+1. Square is 1:1
+2. Long is 2:3
